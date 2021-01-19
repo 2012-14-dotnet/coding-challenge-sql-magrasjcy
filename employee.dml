@@ -1,0 +1,12 @@
+insert into employee values (100, "Marcus","Aurelius","540-34-3234","marketing");
+insert into employee values (101, "Marcus","Anthony","621-19-4344","accounting");
+insert into employee values (102, "Pontius","Pilate","112-48-9545","marketing");
+insert into employee values (104, "Tina","Smith","116-94-4894","marketing");
+insert into EmpDetails values(100,1001,40000,"101 big kahuna drive","","honalulu","HI","USA");
+insert into EmpDetails values(101,1002,45000,"651 scenic  drive","","honalulu","HI","USA");
+insert into EmpDetails values(102,1003,44000,"1204 sun tower","","honalulu","HI","USA");
+insert into EmpDetails values(104,1009,46000,"23 bungaloo dr", "honalulu","HI","USA");
+update EmpDetails set salary=90000 (select * from employee where FirstName='Tina' and LastName='Smith');
+select sum() from employee where DeptID=='marketing';
+select * from employee order by DeptID;
+update EmpDetails set salary=90000 (select * from employee where FirstName='Tina' and LastName='Smith');
